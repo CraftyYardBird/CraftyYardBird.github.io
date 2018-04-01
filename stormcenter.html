@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en-US">
+	<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+  <meta name="author" content="Alexandra Uskova">
+  <meta name="description" content="Franklin page project">
+  <!-- external style references in the proper cascading order -->    
+  <link href="https://fonts.googleapis.com/css?family=#" rel="stylesheet">  <!-- Google API font reference -->
+  <link href="styles/normalize.css" rel="stylesheet"> <!-- normalize useragent/browser defaults -->
+  <link href="styles/main-5.css" rel="stylesheet">    <!-- default styles - small/phone views -->
+  <link href="styles/medium-5.css" rel="stylesheet">  <!-- medium/tablet views -->
+  <link href="styles/large-5.css" rel="stylesheet">   <!-- large/wide/desktop views --> 
+      <link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
+	<script type="text/javascript" src="scripts/hamburger.js" defer></script>
+	<script type="text/javascript" src="scripts/currentDate.js" defer></script>
+</head>
+	
+    <body>
+		<header>
+            
+          <div class="header">  
+  <h1> <img class="header" src="images/iconstorm.png" alt="header" width="100" > Report the storm </h1>
+          </div>  
+            
+            <button type="button" class="hamburger" onclick="HamburgerNav()"> &#9776; </button>
+            
+            <nav id="myNav">
+                <ul class="topnav" id="mainmenu">
+                    <li> <a href="index.html">Home</a></li>
+                    <li class="active"> <a href="franklin-7.html">Franklin</a> </li>
+                    <li> <a href="greenville.html">Greenville </a></li>
+                    <li> <a href="springfield.html">Springfield </a></li>
+                    <li> <a href="storm_center.html"> Storm Center </a></li>
+                    <li> <a href="#"> Contact Us</a></li>
+                    <li id="lastLi"> <a href="gallery.html"> Gallery</a></li>
+                </ul>
+            </nav>
+            <img class="banner" src="images/storm.jpg" alt="Storm">
+        </header>
+
+        <main>
+
+            <form name="storm_report" action="thank_you.html" method="post">
+                <fieldset>
+                    <legend> Report Storms in Your Area</legend>
+                
+                    <h2> Contact Information </h2>
+                      
+                      <div>
+                        <label> Full Name:  </label>
+                        
+                        <input name="full name" type="text" value="" placeholder="Insert your full name here" pattern="[A-Za-z\s]{1,60}" required>
+                      </div>
+                      
+                      <div>
+                        <label> Email: </label>
+                          
+                        <input name="email" type="email" value="" placeholder="johnny@gmail.com"  required>
+                      </div>
+                    
+                      <div>
+                        <label> Phone Numeber: </label>
+                          
+                        <input name="phone" type="tel" value="" placeholder="123-456-7985" pattern="[0-9-]{10,20}" required>
+                      </div>
+                          
+                      <div>
+                        <label> Zip Code: </label>
+                        <input name="zip_code" type="number" value="" placeholder="123456" required>
+                      </div>
+                          
+                    <h2> Storm Details </h2>
+                  
+                      <div>
+                        <label> Storm Date: </label>
+                        <input name="storm_date" type="date">
+                        <!-- polyfill -->
+                      </div>
+                    
+                      <div>
+                        <label> Storm Type </label> <input list="storm_types" placeholder="What kind of storm is it?">
+  		                    <datalist id="storm_types">
+                                <option value="Flash Flood">
+                                <option value="Hail">
+                                <option value="Hurricane">
+                                <option value="Thunderstorm">
+                                <option value="Tornado">
+  		                    </datalist> 
+                      </div>
+                    
+                    
+                      <div>
+                        <label> Storm Severity (rate between 1 and 10): </label>
+                        <input id="range" name="storm_severity" type="range" value="5" min="1" max="10" step="1" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+		                  
+                          <span id="ratingvalue">5</span>
+                          
+                      </div>
+                     
+                      <div >
+                        <label>Storm Region: </label>
+                        <select id="storm_region" name="storm_region">
+                            <option value="" selected disabled>Select Region</option>
+                            <option value="franklin">Franklin</option>
+                            <option value="greenville">Greenville</option>
+                            <option value="springfield">Springfield</option>
+                        </select>
+
+                      </div>
+                    
+                      <div id="danger">
+                        <label> Are You in Danger? </label>
+                         Yes <input class="danger" name="danger" type="radio" value="yes">
+                         No <input class="danger" name="danger" type="radio" value="no">
+                         Maybe <input class="danger" name="danger" type="radio" value="maybe"> 
+                        
+                      </div>
+                
+                      <div>
+                          <label> Leave Additional Information: </label>
+                        <textarea id="more-info" name="more_info" rows="10" cols="30"> </textarea>
+                        
+                      </div>
+                
+                      <div id="submit">
+                        <input type="submit" name="submit" value="Submit">
+                      </div>
+                </fieldset>
+            </form> 
+    
+            
+        </main>
+        
+      <footer class="flex-container">
+    <aside>
+      Call us at : 800 800 80 80
+    </aside>
+      <p class="footer-bar">&copy;2018 All Rights Reserved | The sun will come out| <p id="currentdate"></p> </p>
+  </footer>
+    
+		<script>
+    
+var urlString = document.location.href;
+var urlArray = urlString.split('/');
+var pageHREF=urlArray[urlArray.length-1];
+
+if (pageHREF !==""){
+	var menu = document.querySelectorAll('ul#mainmenu li a');
+	var i;
+	
+	//loop through all the menu items in the navigation
+	for (i=0; i<menu.length; i++){
+		var currentURL=(menu[i].getAttribute("href"));
+		menu[i].parentNode.className=""; //turn off hilighting by default
+		if (currentURL ===pageHREF) {
+			menu[i].parentNode.className="active"; //turn on if a match 
+		} // end if
+	} // end of search for a match
+} // end of if !==
+    </script>
+	</body>
+    
+</html>
