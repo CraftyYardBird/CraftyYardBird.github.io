@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>Gallery</title>
+
+<head>
+    	<title>Contact us</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="styles/normalize.css" rel="stylesheet" >
+        <link href="styles/main.css" rel="stylesheet" >
+        <link href="styles/medium.css" rel="stylesheet" >
+        <link href="styles/large.css" rel="stylesheet" >
+        <link href="https://fonts.googleapis.com/css?family=Chicle|Open+Sans" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    <script type="text/javascript" src="scripts/responsiveMenu.js" defer></script>
+    	<script src="js/jquery-3.3.1.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="form/css/util.css">
+	<link rel="stylesheet" type="text/css" href="form/css/main.css">
+</head>
+<header>
+    <img src="images/logo.png" id="logo" alt="Logo">
+
+
+<nav class="navigation">
+            <button onclick="myFunction()">&#9776;</button>
+            <ul id="primaryNavigation" class="hide">
+       
+    <li><a class="" href="MountainSpokeNew.html"> Home </a></li>
+    <li><a class="" href="trips.html">Trips</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li><a class=""href="signup.html">Reservations</a></li>
+    <li><a class=""href="gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+    </header>
+  <main>
+      <body>
+    
+    <div id="galleryImg">
+                    <figure>
+                        <img class="galleryImg" src="images/gallery%20(1).jpg" alt="foggy day" width="300" height="300" >
+                        <figcaption> Lorem ipsum dolor sit amet, consectetur adipiscing elit.</figcaption>
+                    </figure>
+                     <figure>
+                        <img src="images/gallery%20(2).jpg" alt="snow  day" width="300" height="300">
+                        <figcaption> Lorem ipsum dolor sit amet, consectetur adipiscing elit.</figcaption>
+                    </figure> <figure>
+                        <img src="images/gallery%20(3).jpg" alt="stormy day" width="300" height="300">
+                        <figcaption> Lorem ipsum dolor sit amet, consectetur adipiscing elit.</figcaption>
+                    </figure> <figure>
+                        <img src="images/gallery%20(4).jpg" alt="windy day" width="300" height="300">
+                        <figcaption> Lorem ipsum dolor sit amet, consectetur adipiscing elit.</figcaption>
+                    </figure> <figure>
+                        <img src="images/gallery%20(5).jpg" alt="sad day" width="300" height="300">
+                        <figcaption> Lorem ipsum dolor sit amet, consectetur adipiscing elit.</figcaption>
+                    </figure> <figure>
+                        <img src="images/gallery%20(6).jpg" alt="rainy day" width="300" height="300">
+                        <figcaption> Lorem ipsum dolor sit amet, consectetur adipiscing elit.</figcaption>
+                    </figure> <figure>
+                        <img src="images/gallery1.jpg" alt="th th thuner" width="300" height="300">
+                        <figcaption> Lorem ipsum dolor sit amet, consectetur adipiscing elit.</figcaption>
+                    </figure>
+                </div>
+           
+    
+      </main>
+    
+  <footer>
+    <aside>
+      Call us at : 800 800 80 80
+    </aside>
+      <p class="footer-bar">&copy;2018 All Rights Reserved | The Mountain Spoken| <p id="currentdate"></p> </p>
+  </footer>
+    
+
+    <script>
+document.getElementById("currentdate").innerHTML = Date();
+</script>
+
+
+
+
+
+
+
+  <script src="scripts/hamburger.js"></script>
+  <script src="scripts/currentdate.js"></script>
+    <script>
+	 $(function() {
+      
+            $('.navigation > li').hover(function() {
+                    // Executes when mouse is over list item
+                    $(this).addClass('openSesame');
+                },
+
+                function() {
+                                       
+                    $(this).removeClass('openSesame');
+                });
+        })
+	</script>
+
+</body>
+</html>
+

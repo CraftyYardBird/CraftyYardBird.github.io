@@ -1,0 +1,367 @@
+/* CSS Document */
+
+
+@import url('https://fonts.googleapis.com/css?family=Lora');
+body {
+    font-family: Calibri;
+}
+
+
+/* Header */
+
+header {
+    background-color: #EAFAF1;
+    padding: 20px;
+    0 margin-bottom: 20px;
+}
+
+header img div {
+    float: center;
+    padding: .5em;
+    max-width: 100%;
+}
+
+header img {
+    float: center;
+    padding: .5em;
+    max-width: 100%;
+}
+
+
+/* Navigation */
+
+
+.navigation {
+	position: relative;
+	left: 0px;
+	padding: 0px;
+	margin: 0px;
+	font-family: sans-serif;
+	text-shadow:0px 0px 1px rgba(0,0,0,0.2);
+	list-style: none;
+	top: 70px;
+	height: 97px;
+}
+
+.navigation > li {
+	position: relative;
+	background: rgba(0,0,0,0.2);
+	width: 150px;
+	height: 10px;
+	padding: 20px;
+	margin-top: 2px;
+	left: -188px;
+	border-right: 50px solid red;
+	-webkit-transition: left 500ms;
+	   -moz-transition: left 500ms;
+	    -ms-transition: left 500ms;
+	     -o-transition: left 500ms;
+	        transition: left 500ms;
+}
+
+nav button {
+    display: block;
+    position: absolute;
+    top: rem;
+    right: 2%;
+}
+
+nav ul {
+    padding: 0;
+    margin: 0;
+    display: flex;
+    display: -ms-flexbox;
+    flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+}
+
+nav ul.show {
+    display: flex;
+    display: -ms-flexbox;
+}
+
+nav ul li {
+    width: 100%;
+    float: left;
+    padding: 1;
+    border-bottom: 1px solid #ccc;
+}
+
+nav li {
+    padding: 10px;
+    background-color: black;
+    opacity: 0.5;
+    font-size: 1.5rem;
+    border-color: darkgreen;
+    border: solid;
+    text-align: center;
+}
+
+nav ul li ul li {
+    padding: .5px;
+    background-color: #008080;
+    font-size: 1.5rem;
+    border: solid, 1px;
+    text-align: center;
+}
+
+nav ul li.active a {
+    background: linear-gradient(#147429 0%, #1a9835 100%);
+}
+
+
+/* added for mobile menu */
+
+nav ul.hide {
+    display: none
+}
+
+
+/* added for mobile menu */
+
+nav ul li {
+    flex-basis: 100%;
+    -ms-flex: 100%;
+    list-style: none;
+    border-bottom: 3px solid;
+}
+
+nav ul li a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: 400;
+    padding: ;
+    text-align: center;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+nav ul li a:hover {
+    background-color: lightcyan;
+    color: darkblue
+}
+
+
+
+
+/* Main */
+
+main {
+    background-color: #EAFAF1;
+}
+
+h1 {
+    text-align: center;
+    font-size: 2em;
+}
+
+div article {
+    margin: 2.5rem;
+}
+
+figure {
+    justify-content: center;
+}
+
+picture {
+    display: flex;
+    max-height: 100%;
+ 
+    padding: 1em;
+    justify-content: center;
+}
+
+div img {
+    padding: 1px;
+    border: 5px solid ##008080;
+    background-color: #000000;
+}
+
+.adv {
+    margin: 3rem;
+    margin-left: 10rem;
+}
+
+
+/* River Guides */
+
+div p {
+    font-size: 2rem;
+    margin: 2em;
+}
+
+
+
+#c,
+#f,
+#j {
+    display: none;
+}
+
+button:hover {
+    background-color: #075d43;
+}
+
+.cl {
+    padding: 1em;
+}
+
+
+/* Animated Adventure Menu */
+
+.mySidenav {
+    position: relative;
+    right: 10px;
+    padding: 0px;
+    margin: 0px;
+    font-family: sans-serif;
+    text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.2);
+    list-style: none;
+    top: 20px;
+    height: 97px;
+}
+
+.mySidenav>li {
+    position: relative;
+    background: rgba(0, 0, 0, 0.2);
+    color: white;
+    width: 150px;
+    height: 50px;
+    padding: 15px;
+    margin-top: 2px;
+    left: -188px;
+    border-right: 50px solid green;
+    -webkit-transition: right 500ms;
+    -moz-transition: left 500ms;
+    -ms-transition: left 500ms;
+    -o-transition: left 500ms;
+    transition: left 500ms;
+}
+
+li.openSesame {
+    left: 0px;
+}
+
+main body,
+{
+    margin: 0px;
+    padding: 0px;
+    position: relative;
+}
+
+h2 {
+    font-size: .5em
+}
+
+
+/* Gallery */
+
+.gal {
+    padding: 1em;
+    display: grid;
+    grid-template-columns: repeat(1, 100%);
+}
+
+figure {
+    width: 300px;
+}
+
+.rocorn {
+    border-radius: 5px 50px;
+}
+
+
+/* Reservation */
+
+button{
+    display: inline-grid;
+    float: left;
+    margin: 2rem;
+    font-size: 2em;
+    margin-top: 2rem;
+    background-color: darkgreen;
+   padding: 10px;
+    border-radius: 12px;
+    border-width: thick;
+    border-color: grey;
+}
+
+table {
+    display: inline-block;
+    vertical-align: top;
+    margin: 1em;
+    border-collapse: collapse;
+}
+
+th,
+td {
+    padding: 10px;
+    border: 1px solid black;
+    border-width: 5px;
+    border-color: #072d63;
+}
+
+
+/* Form */
+
+div p {
+    padding: .5em;
+    border: solid;
+}
+
+#frame {
+    margin: 5em;
+}
+
+form #con {
+    margin: 10%;
+    font-family: Lora, sans-serif;
+}
+
+fieldset {
+    background-color: tan;
+    border-radius: .8em;
+    margin: 1.5em 0;
+}
+
+legend {
+    color: brown;
+    margin-left: 6%;
+    padding: 2px;
+    border: black solid 1px;
+    background-color: bisque;
+    border-radius: .4em;
+    font-size: 24px;
+}
+
+label {
+    display: block;
+    margin: .5em;
+}
+
+label span {
+    display: block;
+    padding-top: .3em;
+}
+
+
+/* Footer */
+
+footer {
+    border-top: solid;
+    background-color: #a5a5af;
+}
+
+.footer {
+    vertical-align: middle;
+    display: flex;
+    list-style-type: none;
+    padding-bottom: 1em;
+}
+
+.footer li {
+    padding-left: 1em;
+    padding-right: 1em
+}
+

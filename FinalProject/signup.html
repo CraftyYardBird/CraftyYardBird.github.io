@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Contact V</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->
+	<link rel="icon" type="image/png" href="form/images/icons/favicon.ico"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="form/vendor/bootstrap/css/bootstrap.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="form/fonts/font-awesome-4.7.0/css/font-awesome.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="form/vendor/animate/animate.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="form/vendor/css-hamburgers/hamburgers.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="form/vendor/select2/select2.min.css">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="form/css/util.css">
+	<link rel="stylesheet" type="text/css" href="form/css/main.css">
+<!--===============================================================================================-->
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="//code.jquery.com/jquery-2.2.1.min.js"></script>
+<script src="scripts/jquery-2.2.1.min.js"></script>
+<link href='https://fonts.googleapis.com/css?family=Lora' rel='stylesheet'>
+<link rel="stylesheet" href="styles/main.css">
+<link rel="stylesheet" href="styles/medium.css">
+<link rel="stylesheet" href="styles/large.css">
+<link rel="stylesheet" href="styles/normalize.css">
+<link rel="icon" type="image/png" sizes="16x16" href="images/android-icon-48x48.png">
+<title>
+    </title>
+</head>
+<header>
+    <img src="images/logo.png" id="logo" alt="Logo">
+
+</header>
+<nav class="navigation">
+            <button onclick="myFunction()">&#9776;</button>
+            <ul id="primaryNavigation" class="hide">
+       
+    <li><a class="" href="MountainSpokeNew.html"> Home </a></li>
+    <li><a class="" href="trips.html">Trips</a></li>
+    <li><a href="contact.html">Contact</a></li>
+    <li class="active"><a href="signup.html">Reservations</a></li>
+    <li><a class=""href="gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+</head>
+<body>
+<div><img class="picture" src="images/gallery%20(3).jpg" id="picture" alt="BOZMAN"  width="100%" height="90%">
+	<div class="bg-contact2" style="background-image: url('form/images/bg-01.jpg');">
+		<div class="container-contact2">
+			<div class="wrap-contact2">
+				<form class="contact2-form validate-form">
+					<span class="contact2-form-title">
+						BOOK A TRIP
+					</span>
+
+					<div class="wrap-input2 validate-input" data-validate="Name is required">
+						<input class="input2" type="text" name="name">
+						<span class="focus-input2" data-placeholder="NAME"></span>
+					</div>
+
+					<div class="wrap-input2 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
+						<input class="input2" type="text" name="email">
+						<span class="focus-input2" data-placeholder="EMAIL"></span>
+					</div>
+
+					<div class="wrap-input2 validate-input">
+						<input class="input2" type="text" name="NAME">
+						<span class="focus-input2" data-placeholder="TRIP"></span>
+                         <input list="trips" placeholder="Chose an option">
+  		                    <datalist id="trips">
+                                <option value="Family">
+                                <option value="Extreem">
+                                <option value="Hike">
+                                <option value="Chill">
+                                <option value="Seanic">
+  		                    </datalist> 
+                            </input>
+                    </div>
+                 <div class="wrap-input2 validate-input">
+						<input class="input2" type="text" name="Number">
+						<span class="focus-input2" data-placeholder="NUMBER OF 
+BIKERS "></span>
+                         <input list="bikers" placeholder="Spots">
+  		                    <datalist id="bikers">
+                                <option value="ONE">
+                                <option value="COUPLE">
+                                <option value="FAMILY">
+                                <option value="GROUP < 10">
+                                <option value="GROUP <20">
+  		                    </datalist> 
+                            </input>
+                    </div>
+            
+            <div class="wrap-input2 validate-input">
+          <div class="arrival">
+            <span  data-placeholder="FROM"></span>
+            <input name="arrival" type="text" onfocus="(this.type='date')" onblur="(this.type='text')" placeholder="10/03/2016"/>
+          </div>
+          <div class="departure">
+              <span  data-placeholder="TO"></span>
+            <input name="departure" type="text" onfocus="(this.type='date')" onblur="(this.type='text')" placeholder="05/11/2016"/>
+          </div>
+            </div>
+					
+        <div class="container-contact2-form-btn">
+						<div class="button">
+							<div class="contact2-form-bgbtn"></div>
+							<button class="contact2-form-btn">
+							BOOK A TRIP
+							</button> 
+						</div>
+					</div>
+				
+	<script src="form/vendor/jquery/jquery-3.2.1.min.js"></script>
+	<script src="form/vendor/bootstrap/js/popper.js"></script>
+	<script src="form/vendor/bootstrap/js/bootstrap.min.js"></script>
+	<script src="form/vendor/select2/select2.min.js"></script>
+	<script src="form/js/main.js"></script>
+
+<script src="scripts/hamburger.js"></script>
+  <script src="scripts/currentdate.js"></script>
+    <script>
+	 $(function() {
+      
+            $('.navigation > li').hover(function() {
+                    // Executes when mouse is over list item
+                    $(this).addClass('openSesame');
+                },
+
+                function() {
+                                       
+                    $(this).removeClass('openSesame');
+                });
+        })
+	</script>
+
+
+</body>
+</html>
+
+
+
+    
+    </body>
+<main> </main>
+</html>

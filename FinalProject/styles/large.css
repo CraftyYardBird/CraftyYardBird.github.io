@@ -1,0 +1,44 @@
+    @media only screen and (min-width: 64em) {
+        /* CSS Document */
+        /* Header */
+        /* Navigation */
+        nav ul li {
+            flex-basis: auto;
+            -ms-flex: 0 0 auto;
+        }
+        nav ul li a {
+            padding: .5rem 1rem;
+        }
+        /* Main */
+         #galleryImg {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;  
+        text-align: center;
+        margin-left: 20px;
+    }
+
+    #galleryImg figure {
+        padding: 5px;
+    }
+    
+    #galleryImg figure:hover {
+        box-shadow: 5px 5px 10px gray;
+    }    
+        img {
+            max-width: inherit;
+        }
+        /* Tables */
+        table,
+        th,
+        td {
+            max-width: 1024px;
+        }
+        /* Gallery */
+        .gal {
+            grid-template-columns: repeat(3, 32%);
+        }
+        .gal img:hover {
+            box-shadow: 5px 5px 5px grey;
+        }
+        /* Footer */
+    }

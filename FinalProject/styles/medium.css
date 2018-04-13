@@ -1,0 +1,58 @@
+@media only screen and (min-width: 37.5em) {
+    /* CSS Document */
+    /* Header */
+    /* Navigation */
+    nav button {
+        display: none;
+        /* added for mobile menu */
+    }
+    nav ul.hide {
+        display: flex;
+        display: -ms-flexbox;
+    }
+    /*added for mobile menu*/
+    nav ul {
+        flex-wrap: nowrap;
+        -ms-flex-wrap: nowrap;
+    }
+    nav ul li {
+        -ms-flex: 1 0 auto;
+    }
+    nav ul li a {
+        border-bottom: none;
+    }
+    /* Main */
+    h1 {
+        font-size: 5em;
+        text-align: center;
+    }
+    article {
+        margin-top: .2rem;
+        margin-left: 5rem;
+        margin-right: .5rem;
+        font-size: 30px;
+    }
+    #homecontainer {
+        display: flex;
+        flex-direction: row;
+    }
+    /* Adventures */
+    .mySidenav>li {
+        color: black;
+    }
+    /* Guides */
+    .pic {
+        display: grid;
+        grid-template-columns: repeat(2, 49%);
+    }
+    /* Tables */
+    .tab {
+        display: inline-block;
+    }
+    /* Gallery */
+    .gal {
+        display: grid;
+        grid-template-columns: repeat(2, 49%);
+    }
+    /* Footer */
+}

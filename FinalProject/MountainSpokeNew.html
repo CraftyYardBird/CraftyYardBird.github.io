@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en-us">
+<head>
+  	<title>Contact us</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+        <link href="styles/normalize.css" rel="stylesheet" >
+        <link href="styles/main.css" rel="stylesheet" >
+        <link href="styles/medium.css" rel="stylesheet" >
+        <link href="styles/large.css" rel="stylesheet" >
+        <link href="https://fonts.googleapis.com/css?family=Chicle|Open+Sans" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    <script type="text/javascript" src="scripts/responsiveMenu.js" defer></script>
+    	<script src="js/jquery-3.3.1.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="form/css/util.css">
+	<link rel="stylesheet" type="text/css" href="form/css/main.css">
+        
+</head>
+<body>
+
+  <header>
+   
+      <img src="images/logo.png" id="logo" alt="Logo">
+  
+
+
+<nav class="navigation">
+            <button onclick="myFunction()">&#9776;</button>
+            <ul id="primaryNavigation" class="hide">
+       
+    <li><a class="active" href="MountainSpokeNew.html"> Home </a></li>
+    <li><a class="" href="trips.html">Trips</a></li>
+    <li><a class=""href="contact.html">Contact</a></li>
+    <li><a class=""href="signup.html">Reservations</a></li>
+    <li><a class=""href="gallery.html">Gallery</a></li>
+            </ul>
+        </nav>
+      </header>
+    </body>
+  <main>
+      
+          
+     <div><img class="picture" src="images/boz.jpg" id="picture" alt="BOZMAN"  width="100%" height="90%">
+    
+         <h1> Welcome to Bozeman</h1>
+          <article>There are so many cool places to cycle. If you’re ready for a cycling adventure, grab your helmet and choose a destination
+         </article>
+         <article> Whether you’re a beginner cyclist looking for easy, carefree bike tours or an experienced cyclist looking for a challenging ride, we have bicycle tours for cyclists of all experience levels. 
+         </article></div>
+      
+  </main>
+    
+  <footer>
+    <aside>
+      Call us at : 800 800 80 80
+    </aside>
+      <p class="footer-bar">&copy;2018 All Rights Reserved | The sun will come out| <p id="currentdate"></p> 
+  </footer>
+    
+
+    <script>
+document.getElementById("currentdate").innerHTML = Date();
+</script>
+<html>
+
+
+
+
+
+
+
+  <script src="scripts/hamburger.js"></script>
+  <script src="scripts/currentdate.js"></script>
+    <script>
+	 $(function() {
+      
+            $('.navigation > li').hover(function() {
+                    // Executes when mouse is over list item
+                    $(this).addClass('openSesame');
+                },
+
+                function() {
+                                       
+                    $(this).removeClass('openSesame');
+                });
+        })
+	</script>
+
