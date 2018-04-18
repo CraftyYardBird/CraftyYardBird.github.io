@@ -1,11 +1,11 @@
- function () { var url = 'https://api.wunderground.com/api/be9da62e0d0d19a0/conditions/q/TN/Franklin.json';
+ 
   
-var weatherObject = new XMLHttpRequest();
-
-weatherObject.open('GET', 'url', true);
-
-weatherObject.send();
-weatherObject.onload = function()
+(function() {
+  var url = 'https://api.wunderground.com/api/be9da62e0d0d19a0/conditions/q/TN/Franklin.json';
+  var weatherObject = new XMLHttpRequest();
+  weatherObject.open('GET', url, true);
+  weatherObject.send();
+  weatherObject.onload = function() 
 {
     var weatherInfo = JSON.parse(weatherObject.responseText);    
     console.log(weatherInfo);
@@ -23,4 +23,5 @@ weatherObject.onload = function()
     
     
 }
+  )();
              }
