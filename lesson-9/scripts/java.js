@@ -14,7 +14,7 @@ weatherObject.onload = function()
     
     document.getElementById('hum').innerHTML = weatherInfo.current_observation.relative_humidity;
     document.getElementById('Windmpr').innerHTML = weatherInfo.current_observation.wind_mph;
-     document.getElementById('story').src = weatherInfo.current_observation.history_url;
+     
     
     
     
