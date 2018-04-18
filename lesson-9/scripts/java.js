@@ -11,10 +11,11 @@ weatherObject.onload = function()
     document.getElementById('currentTemp').innerHTML = weatherInfo.current_observation.dewpoint_f;
     document.getElementById('w_icon').src = weatherInfo.current_observation.icon_url;
     document.getElementById('summary').innerHTML = weatherInfo.current_observation.weather;
-    document.getElementById('HighTemp').innerHTML = weatherInfo.current_observation.dewpoint_f;
-    document.getElementById('LowTemp').innerHTML = weatherInfo.current_observation.dewpoint_f;
+    
     document.getElementById('hum').innerHTML = weatherInfo.current_observation.relative_humidity;
     document.getElementById('Windmpr').innerHTML = weatherInfo.current_observation.wind_mph;
+     document.getElementById('story').src = weatherInfo.current_observation.history_url;
+    
     
     
     
