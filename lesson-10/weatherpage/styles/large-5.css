@@ -1,0 +1,75 @@
+@media only screen and (min-width: 64em){
+ 
+/* header */
+       
+header {
+    font-size: large;
+}
+    
+/* nav */
+       
+.navigation {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: goldenrod;
+}
+
+.navigation li {
+    float: left;
+}
+
+.navigation li a {
+    display: block;
+    color: white;
+    font-size: x-large;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+.navigation li a:hover {
+    background-color: #b2cfff;
+    color: #143e7f;
+}
+    
+/* main */
+    
+.weathernow {
+    font-size: xx-large;
+}
+    .franklin li {
+        font-size: x-large;
+    }
+.tenday {
+    display: block;
+    font-size: xx-large;
+}
+.hidesmall {
+    display: block;
+    margin: 15px 15px
+    }
+th {
+    font-size: x-large;
+}
+td {
+    font-size: x-large;
+}
+    #galleryImg {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;  
+        text-align: center;
+        margin-left: 20px;
+    }
+
+    #galleryImg figure {
+        padding: 5px;
+    }
+    
+    #galleryImg figure:hover {
+        box-shadow: 5px 5px 10px gray;
+    }    
+
+}  /* end of media query */

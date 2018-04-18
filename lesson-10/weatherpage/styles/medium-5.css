@@ -1,0 +1,69 @@
+@media only screen and (min-width: 37.5em) {   
+    
+/* nav */
+
+    
+nav button {display: none;}
+    nav ul.hide{display: block}
+    
+.navigation {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    
+}
+
+.navigation li {
+    float: left;
+}
+
+.navigation li a {
+    display: block;
+    color: white;
+    font-size: large;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+/* Change the link color to #b2cfff (blue) on hover */
+    
+.navigation li a:hover {
+    background-color: lightcyan;
+    color: black;
+}
+
+/* main */
+    
+.tenday {
+    display: block;
+    padding-top: 3rem;
+    font-size: 26px;
+    color:darkgray
+}
+    
+.hidesmall {
+    display: block;
+    margin: 15px 15px
+}
+    
+.hidesmall td {
+    color:  black;
+    }
+} /* end of media query */
+
+#galleryImg {
+       width:  400px;
+       height:  400px;
+       grid-template-columns: 2fr 2fr;
+    }
+    
+figure {
+    width:  400px;
+       height:  400px;
+       grid-template-columns: 1fr 1fr;
+     
+        
+        max-width: 300px;
+    }
