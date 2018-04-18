@@ -2,6 +2,7 @@ var weatherObject = new XMLHttpRequest();
 var requestURL = 'https://api.wunderground.com/api/be9da62e0d0d19a0/conditions/q/TN/Franklin.json';
 function getSecureIconRequest(urlString){
 return [urlString.slice(0,4), 's', urlString.slice(4)].join('');
+    document.getElemenyById('icon').src = getSecureIconRequest(franklinData['icon_url']);
 
 }
 weatherObject.open('GET', 'http://api.wunderground.com/api/be9da62e0d0d19a0/conditions/q/TN/Franklin.json', true);
