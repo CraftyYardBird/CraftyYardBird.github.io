@@ -1,8 +1,9 @@
  
   
-
-  var urls = 'https://api.wunderground.com/api/be9da62e0d0d19a0/conditions/q/TN/Franklin.json';
+function() {
+ 
   var weatherObject = new XMLHttpsRequest();
+  var urls = 'https://api.wunderground.com/api/be9da62e0d0d19a0/conditions/q/TN/Franklin.json';
   weatherObject.open('GET', urls, true);
   weatherObject.send();
   weatherObject.onload = function() 
@@ -17,11 +18,8 @@
     document.getElementById('hum').innerHTML = weatherInfo.current_observation.relative_humidity;
     document.getElementById('Windmpr').innerHTML = weatherInfo.current_observation.wind_mph;
      
-    
-    
-    
-    
-  }   
+       
+  }   }
 
   
              
