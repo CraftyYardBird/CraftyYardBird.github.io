@@ -1,9 +1,9 @@
  
   
 function() {
-  var url = 'https://api.wunderground.com/api/be9da62e0d0d19a0/conditions/q/TN/Franklin.json';
+  var urls = 'https://api.wunderground.com/api/be9da62e0d0d19a0/conditions/q/TN/Franklin.json';
   var weatherObject = new XMLHttpsRequest();
-  weatherObject.open('GET', url, true);
+  weatherObject.open('GET', urls, true);
   weatherObject.send();
   weatherObject.onload = function() 
 {
