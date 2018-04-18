@@ -1,4 +1,4 @@
- var url = 'https://api.wunderground.com/api/be9da62e0d0d19a0/conditions/q/TN/Franklin.json';
+ function () { var url = 'https://api.wunderground.com/api/be9da62e0d0d19a0/conditions/q/TN/Franklin.json';
   
 var weatherObject = new XMLHttpRequest();
 
@@ -23,3 +23,4 @@ weatherObject.onload = function()
     
     
 }
+             }
