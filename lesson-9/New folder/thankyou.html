@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en-US">
+	<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title></title>
+  <meta name="author" content="Alexandra Uskova">
+  <meta name="description" content="Franklin page project">
+  <!-- external style references in the proper cascading order -->    
+  <link href="https://fonts.googleapis.com/css?family=#" rel="stylesheet">  <!-- Google API font reference -->
+  <link href="styles/normalize.css" rel="stylesheet"> <!-- normalize useragent/browser defaults -->
+  <link href="styles/main-5.css" rel="stylesheet">    <!-- default styles - small/phone views -->
+  <link href="styles/medium-5.css" rel="stylesheet">  <!-- medium/tablet views -->
+  <link href="styles/large-5.css" rel="stylesheet">   <!-- large/wide/desktop views --> 
+      <link href="https://fonts.googleapis.com/css?family=Kaushan+Script" rel="stylesheet">
+	<script type="text/javascript" src="scripts/hamburger.js" defer></script>
+	<script type="text/javascript" src="scripts/currentDate.js" defer></script>
+</head>
+	
+    <body>
+		      <header>  
+          <div class="headline">  
+  <h1> <img class="header" src="images/iconstorm.png" alt="header" width="100"> Report the storm </h1>
+          </div>  
+            
+            <button type="button" class="hamburger" onclick="HamburgerNav()"> &#9776; </button>
+            
+            <nav id="myNav">
+                <ul class="topnav" id="mainmenu">
+                    <li> <a href="index.html">Home</a></li>
+                    <li class="active"> <a href="franklin-7.html">Franklin</a> </li>
+                    <li> <a href="greenville.html">Greenville </a></li>
+                    <li> <a href="springfield.html">Springfield </a></li>
+                    <li> <a href="storm_center.html"> Storm Center </a></li>
+                    <li> <a href="#"> Contact Us</a></li>
+                    <li id="lastLi"> <a href="gallery.html"> Gallery</a></li>
+                </ul>
+            </nav>
+            <img class="banner" src="images/storm.jpg" alt="Storm">
+        </header>
+
+        <main>
+
+            <h2 class="banner"> Thank you for submitting your information </h2>
+            
+         
+            
+        </main>
+        
+        <footer>
+<!-- The footer must contain contact information in the top row and copyright information, the author's name, a terms of use link and the current date in the bottom row. -->
+            <p> &copy; 2017 - Seth Brandon Bennett - Location: Washington State <a href="http://www.byui.edu/online"> BYU-Idaho </a> <span id="currentdate"> <script> todayDate();</script> </span> </p>
+        </footer>
+    </body>
+</html>
