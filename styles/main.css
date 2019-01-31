@@ -35,8 +35,8 @@ header, footer {
 }
 
 main {  
-     font-family: Avantgarde, TeX Gyre ; 
-     margin: 6%;
+    font-family: Avantgarde, TeX Gyre ; 
+    margin: 6%;
     padding: 1.5rem;
     max-width: /* xxxpx (px = pixel is a unit of measure)  */;
     text-align: left;
