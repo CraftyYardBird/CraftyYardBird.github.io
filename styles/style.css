@@ -1,7 +1,7 @@
 /* || general styles */
 
 html {
-  font-family: 'helvetica neue', helvetica, arial, sans-serif;
+  font-family: 'garamond', garamond, garamon, serif;
 }
 
 body {
@@ -10,7 +10,7 @@ body {
 }
 
 h1, h2 {
-  font-family: 'Faster One', cursive;
+  font-family: 'Garamon', bold;
 }
 
 /* header styles */
