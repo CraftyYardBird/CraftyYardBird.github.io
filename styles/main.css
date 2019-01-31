@@ -35,10 +35,10 @@ header, footer {
 }
 
 main {  
-    font-family: Avantgarde, TeX Gyre ; 
-    margin: 6%;
-    padding: 1.5rem;
-    max-width: /* xxxpx (px = pixel is a unit of measure)  */;
+    font-size: 16px; 
+    line-height: 32px;
+    font-family: Avantgarde, TeX Gyre ;
+    
     text-align: left;
     text-indent: inherit;
     font-size:  1.3rem ;
