@@ -1,4 +1,4 @@
-/* CIT 230 - Assignment Portal CSS Template */
+/* CIT 261 - Assignment Portal CSS Template */
 /* You may use #HEX or color names */
 
 /* * is a wildcard referring to all elements. */
@@ -9,7 +9,7 @@ body {
  
     font-size: 16px; 
     line-height: 32px;
-    font-family: "Garamond", Garamon, monospace;
+    font-family: Avantgarde, TeX Gyre ;
     color:  #38674D;
 }
 
@@ -35,7 +35,7 @@ header, footer {
 }
 
 main {  
-     font-family: 'Kaushan Script', cursive; 
+     font-family: 'Avantgarde', TeX Gyre ; 
      margin: 6%;
     padding: 1.5rem;
     max-width: /* xxxpx (px = pixel is a unit of measure)  */;
