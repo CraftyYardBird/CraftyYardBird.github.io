@@ -35,11 +35,10 @@ header, footer {
 }
 
 main {  
-    text-align: center;
-    border-bottom: 1px solid #0D4D24;
-    border-top: 1px solid #0D4D24;
-    border-bottom: 2px dotted  #0D4D24;
-    border-top: 2px dotted #0D4D24;
+     font-size: 16px; 
+    line-height: 32px;
+    font-family: Avantgarde, TeX Gyre ;
+    color:  #38674D;
  
 }
 
