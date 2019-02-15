@@ -74,7 +74,7 @@
 
     </select>
   </p>
-  <p><input id="btn" type="button" value="Guess my favorite color" /></p>
+  <p><input id="btn" type="button" value="How many countries have I visited?" /></p>
 </form>
 
 <script>
@@ -93,6 +93,15 @@ btn.addEventListener('click', function() {
   alert('Number of options selected: ' + HowMany(document.selectForm.color));
 });
 </script>
+
+<p> function HowMany(selectObject) {</p>
+<p>  var numberSelected = 0;</p>
+<p>  for (var i = 0; i < selectObject.options.length; i++) {</p>
+<p>    if (selectObject.options[i].selected) {</p>
+<p>      numberSelected++;</p>
+<p>    }</p>
+<p>  }</p>
+<p>  return numberSelected;</p>
 
        </div>
        <div class="col-sm-4">
