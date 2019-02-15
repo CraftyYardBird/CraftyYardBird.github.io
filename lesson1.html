@@ -61,21 +61,24 @@
         <img src="https://cdncontribute.geeksforgeeks.org/wp-content/uploads/Loop1.png" class="img-responsive" style="width:100%" alt="Image"></p>
         <form name="selectForm">
   <p>
-    <label for="musicTypes">Choose some music types, then click the button below:</label>
-    <select id="musicTypes" name="musicTypes" multiple="multiple">
-      <option selected="selected">R&B</option>
-      <option>Jazz</option>
-      <option>Blues</option>
-      <option>New Age</option>
-      <option>Classical</option>
-      <option>Opera</option>
+    <label for="color">How many contries you have visited</label>
+    <select id="color" name="color" multiple="multiple">
+      <option selected="selected"> America</option>
+      <option>Russia</option>
+      <option>Mexico</option>
+      <option>Canada</option>
+      <option>Brasil</option>
+      <option>Germany</option>
+      <option>England</option>
+      <option>Australia</option>
+
     </select>
   </p>
-  <p><input id="btn" type="button" value="How many are selected?" /></p>
+  <p><input id="btn" type="button" value="Guess my favorite color" /></p>
 </form>
 
 <script>
-function howMany(selectObject) {
+function HowMany(selectObject) {
   var numberSelected = 0;
   for (var i = 0; i < selectObject.options.length; i++) {
     if (selectObject.options[i].selected) {
@@ -87,7 +90,7 @@ function howMany(selectObject) {
 
 var btn = document.getElementById('btn');
 btn.addEventListener('click', function() {
-  alert('Number of options selected: ' + howMany(document.selectForm.musicTypes));
+  alert('Number of options selected: ' + HowMany(document.selectForm.color));
 });
 </script>
 
