@@ -117,3 +117,49 @@
 
           <p>Do while loop is similar to while loop with only difference that it checks for condition after executing the statements, and therefore is an example of Exit Control Loop.</p>
         <img src="https://cdncontribute.geeksforgeeks.org/wp-content/uploads/loop3.png" class="img-responsive" style="width:100%" alt="Image"></div>
+        <label for="color">How many contries you have visited</label>
+        <select id="color" name="color" multiple="multiple">
+          <option selected="selected"> America</option>
+          <option>Russia</option>
+          <option>Mexico</option>
+          <option>Canada</option>
+          <option>Brasil</option>
+          <option>Germany</option>
+          <option>England</option>
+          <option>Australia</option>
+
+        </select>
+        </p>
+      </p>
+      <p><input id="btn" type="button" color=green value="How many countries have I visited?" /></p>
+    </form>
+
+    <script>
+    function HowMany(selectObject) {
+      var numberSelected = 0;
+      for (var i = 0; i < selectObject.options.length; i++) {
+        if (selectObject.options[i].selected) {
+          numberSelected++;
+        }
+      }
+      return numberSelected;
+    }
+
+    var btn = document.getElementById('btn');
+    btn.addEventListener('click', function() {
+      alert('Number of options selected: ' + HowMany(document.selectForm.color));
+    });
+    </script>
+
+    <p align="left">function HowMany(selectObject) {</p>
+    <p align="left">..var numberSelected = 0;</p>
+    <p align="left">..for (var i = 0; i < selectObject.options.length; i++) {</p>
+    <p align="left">....if (selectObject.options[i].selected) {</p>
+    <p align="left">......numberSelected++;</p>
+    <p align="left">....}</p>
+    <p align="left">...}</p>
+    <p align="left">..sreturn numberSelected;</p></p><script>var i = 0;
+          do {
+            i += 1;
+            console.log(i);
+              } while (i < 5);</script>
