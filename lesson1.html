@@ -61,54 +61,56 @@
         <img src="https://cdncontribute.geeksforgeeks.org/wp-content/uploads/Loop1.png" class="img-responsive" style="width:100%" alt="Image"></p>
         <form name="selectForm">
   <p>
-    <label for="color">How many contries you have visited</label>
-    <select id="color" name="color" multiple="multiple">
-      <option selected="selected"> America</option>
-      <option>Russia</option>
-      <option>Mexico</option>
-      <option>Canada</option>
-      <option>Brasil</option>
-      <option>Germany</option>
-      <option>England</option>
-      <option>Australia</option>
 
-    </select>
-  </p>
-  <p><input id="btn" type="button" value="How many countries have I visited?" /></p>
-</form>
-
-<script>
-function HowMany(selectObject) {
-  var numberSelected = 0;
-  for (var i = 0; i < selectObject.options.length; i++) {
-    if (selectObject.options[i].selected) {
-      numberSelected++;
-    }
-  }
-  return numberSelected;
-}
-
-var btn = document.getElementById('btn');
-btn.addEventListener('click', function() {
-  alert('Number of options selected: ' + HowMany(document.selectForm.color));
-});
-</script>
-
-<p align="left">function HowMany(selectObject) {</p>
-<p align="left">  var numberSelected = 0;</p>
-<p align="left">  for (var i = 0; i < selectObject.options.length; i++) {</p>
-<p align="left">    if (selectObject.options[i].selected) {</p>
-<p align="left">      numberSelected++;</p>
-<p align="left">    }</p>
-<p align="left">  }</p>
-<p align="left">  return numberSelected;</p></p>
 
        </div>
        <div class="col-sm-4">
        <h3> For Loop </h3>
         <p>For loop provides a concise way of writing the loop structure. Unlike a while loop, a for statement consumes the initialization, condition and increment/decrement in one line thereby providing a shorter, easy to debug structure of looping.
           <img src="https://cdncontribute.geeksforgeeks.org/wp-content/uploads/loop2.png" class="img-responsive" style="width:100%" alt="Image">
+          <label for="color">How many contries you have visited</label>
+          <select id="color" name="color" multiple="multiple">
+            <option selected="selected"> America</option>
+            <option>Russia</option>
+            <option>Mexico</option>
+            <option>Canada</option>
+            <option>Brasil</option>
+            <option>Germany</option>
+            <option>England</option>
+            <option>Australia</option>
+
+          </select>
+          </p>
         </p>
+        <p><input id="btn" type="button" color=green value="How many countries have I visited?" /></p>
+      </form>
+
+      <script>
+      function HowMany(selectObject) {
+        var numberSelected = 0;
+        for (var i = 0; i < selectObject.options.length; i++) {
+          if (selectObject.options[i].selected) {
+            numberSelected++;
+          }
+        }
+        return numberSelected;
+      }
+
+      var btn = document.getElementById('btn');
+      btn.addEventListener('click', function() {
+        alert('Number of options selected: ' + HowMany(document.selectForm.color));
+      });
+      </script>
+
+      <p align="left">function HowMany(selectObject) {</p>
+      <p align="left">..var numberSelected = 0;</p>
+      <p align="left">..for (var i = 0; i < selectObject.options.length; i++) {</p>
+      <p align="left">....if (selectObject.options[i].selected) {</p>
+      <p align="left">......numberSelected++;</p>
+      <p align="left">....}</p>
+      <p align="left">...}</p>
+      <p align="left">..sreturn numberSelected;</p></p>
+
         </div>
         <div class="col-sm-4">
           <h3> While Loop </h3>
